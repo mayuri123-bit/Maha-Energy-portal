@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-primary: #f59e0b; /* Amber */
+  --color-brand-secondary: #a855f7; /* Purple */
+  --color-dark-bg: #030712; /* Gray 950 */
+}
+
+@layer utilities {
+  .glassmorphism {
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  
+  .glassmorphism-light {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .text-glow-amber {
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.35);
+  }
+  
+  .glow-card-hover {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .glow-card-hover:hover {
+    border-color: rgba(245, 158, 11, 0.25);
+    box-shadow: 0 15px 30px -10px rgba(245, 158, 11, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #030712;
+}
+
+body {
+  color: #f3f4f6;
+  overflow-x: hidden;
+}

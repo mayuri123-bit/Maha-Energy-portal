@@ -1,0 +1,8 @@
+{
+  "name": "Maha Energy Portal",
+  "description": "A comprehensive modern solar portal for Maharashtra, featuring a solar investment savings calculator, nearby installer directories, online bill payment, and an AI-powered solar energy adviser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
